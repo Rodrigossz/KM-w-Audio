@@ -98,13 +98,13 @@ Cloning the repo will download all the training materials to your computer, incl
 
 2. Next, type `cd c:\` then enter. Now, you will be in the root directory of your computer. If you don't have permission to create folders and files here, navigate to a folder where you can download the Bootcamp materials.
 
-3. Type and enter `git clone https://github.com/Rodrigossz/KM-w-Audio.git`
+3. Type and enter `git clone https://github.com/Rodrigossz/KM-w-Audio.git`. You should see something like the image below.
 
 4. *Validation step*: Go to **C:\KM-w-Audio**, or any other folder you have created, and confirm it exists, including the dataset in the resources folder.
 
 ![Git process](./images/git.JPG)
 
->Note! The image above may have a different number r of files downloaded, the training is under constant development.
+>Note! The image above may have a different number of files downloaded, the training is under constant development.
 
 ## Extract text from audio files using the Speech Services
 

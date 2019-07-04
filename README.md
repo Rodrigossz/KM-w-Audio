@@ -1,6 +1,6 @@
 # Use Azure Search and Speech to Text API to mine knowledge from audio
 
-In this lab, you will augment the Knowledge Mining strategy by enriching your Azure Search index with speech extracted from audio files. You will learn how to use the Cognitive Services Speech API to perform a speech-to-text on video files and send this data into blob storage. You will then change your index strucure and job to consider this new information, this should be easy after all the previous labs.
+In this lab, you will augment the Knowledge Mining strategy by enriching your Azure Search index with speech extracted from audio files. You will learn how to use the Cognitive Services Speech API to perform a speech-to-text on video files and send this data into blob storage. You will then change your index structure and job to consider this new information, this should be easy after all the previous labs.
 
 >This GitHub repo has all data and code you need to do this lab.
 
@@ -10,7 +10,7 @@ The need to mix audio data into a Knowledge Mining Solution comes from the momen
 
 * Audio files from conference calls and meetings
 * Extracted audio from videos conferences and trainings
-* Audio from postcasts
+* Audio from podcasts
 * CRM audio data
 
 But it is a challenge to do it since Azure Search, the Azure service for Knowledge Mining, only works with text and images.
@@ -34,7 +34,7 @@ The audio dataset is part of [Microsoft Research Podcast](https://www.microsoft.
 
 To keep the GitHub repo as small as possible, and to keep this lab free, snippets from the original audios were extracted. Their total size is close to 18 MB. But the audios will not be taken to Azure, only their metadata, created with the Microsoft AI service. These meta-stats will occupy less than 10 MB of a blob storage and Azure Search index.
 
-The dataset also has Microsoft public documents like presentations, images, white-papers, etc. All these documents will use less than 50 MB of a blob storage. They will be used to allow you a rich search experience.
+The dataset also has Microsoft public documents like presentations, images, whitepapers, etc. All these documents will use less than 50 MB of a blob storage. They will be used to allow you a rich search experience.
 
 **The total dataset size is less the 100 MB with a big safety margin.**
 
@@ -50,7 +50,7 @@ There is no cost since you will be using the following services in an Azure Free
 
 ## Limitations
 
-Stay tunned! The following limitatios will be addressed in a future lab:
+Stay tuned! The following limitations will be addressed in a future lab:
 
 1. MP3 files
 2. Files bigger than 15 MB
@@ -86,7 +86,7 @@ On the Azure Portal, using your subscription, create all of the  services listed
 
 * Blog Container: Just follow [this](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) process to create a container within the storage account you just created above.
 
-* In the same region you have been using since the begining, use [this](https://docs.microsoft.com/en-us/azure/search/cognitive-search-attach-cognitive-services) process to create a Cognitive Services resource. It will be necessary because we have more the 20 files. And it'll be used at the **Import Data** step. This resource is required for billing proposes. The image below will help you to create this service.
+* In the same region you have been using since the beginning, use [this](https://docs.microsoft.com/en-us/azure/search/cognitive-search-attach-cognitive-services) process to create a Cognitive Services resource. It will be necessary because we have more the 20 files. And it'll be used at the **Import Data** step. This resource is required for billing proposes. The image below will help you to create this service.
 
 ![Resource](./images/resource.JPG)
 
@@ -118,13 +118,13 @@ Cloning the repo will download all the training materials to your computer, incl
 
   * File name: The name of the `.wav` file in the dataset folder.
 
-* Close the `get-text.sh` file and in the same folder, open `exec.sh`. This script submitts the first one for every file in the `dataset` folder. Edit this file adding your Azure Region and your Speech Service key. If haven't changed the folders structre, you don't need to worry about the path. Save and close the file.
+* Close the `get-text.sh` file and in the same folder, open `exec.sh`. This script submits the first one for every file in the `dataset` folder. Edit this file adding your Azure Region and your Speech Service key. If haven't changed the folders structure, you don't need to worry about the path. Save and close the file.
 
 * Using **Git Bash**, navigate to the `scripts` folder and execute `./exec.sh`. It will print logs in your terminal and create json files in the `dataset` folder. You should see something like the image below.
 
 ![Exec](./images/exec.JPG)
 
-* Open one or two json files, with any editor like Notepad, to see what kind of data was created. Basically, you show see some metadada and the transcription of the audio. Now you have text data about your audio files. This is the data that we will search for, using Azure Search. Please note that the audio file original name is contained in the json file name. This will help in the future for any application to do the match between audio and transcription files.
+* Open one or two json files, with any editor like Notepad, to see what kind of data was created. Basically, you show see some metadata and the transcription of the audio. Now you have text data about your audio files. This is the data that we will search for, using Azure Search. Please note that the audio file original name is contained in the json file name. This will help in the future for any application to do the match between audio and transcription files.
 
 ## Upload the Data to your Storage Account
 
@@ -136,9 +136,9 @@ Using the same method, and for the same container, upload the files of the `data
 
 Use [this](https://docs.microsoft.com/en-us/azure/search/cognitive-search-quickstart-blob#create-the-enrichment-pipeline) to import data, but with some differences:
 
-1. Instead of the free resource, use that one created in the beggining of the lab
+1. Instead of the free resource, use that one created in the beginning of the lab
 2. Enable OCR
-3. Extract Key Phrases too, not only people/oganization/location names
+3. Extract Key Phrases too, not only people/organization/location names
 4. Mark the content as retrievable
 
 This process is called enrichment and uses AI to add content extraction, natural language processing (NLP), and image processing skills to an Azure Search indexing pipeline, making unsearchable or unstructured content more searchable.
@@ -174,7 +174,7 @@ If you use this lab as a complement to KMB, you'll end up having the architectur
 
 ![New Architecture](./images/architecture.JPG)
 
-Stay tunned! The following limitatios will be addressed in a future lab:
+Stay tuned! The following limitations will be addressed in a future lab:
 
 1. MP3 files
 2. Files bigger than 15 MB

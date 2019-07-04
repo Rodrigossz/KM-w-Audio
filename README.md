@@ -88,7 +88,7 @@ On the Azure Portal, using your subscription, create all of the  services listed
 
 * In the same region you have been using since the begining, use [this](https://docs.microsoft.com/en-us/azure/search/cognitive-search-attach-cognitive-services) process to create a Cognitive Services resource. It will be necessary because we have more the 20 files. And it'll be used at the **Import Data** step. This resource is required for billing proposes. The image below will help you to create this service.
 
-![Resource](./images/resource.jpg)
+![Resource](./images/resource.JPG)
 
 ## Clone the Repo
 
@@ -102,7 +102,7 @@ Cloning the repo will download all the training materials to your computer, incl
 
 4. *Validation step*: Go to **C:\KM-w-Audio**, or any other folder you have created, and confirm it exists, including the dataset in the resources folder.
 
-![Git process](../resources/images/lab-environment-creation/git.png)
+![Git process](../resources/images/lab-environment-creation/git.JPG)
 
 >Note! The image above may have a different number r of files downloaded, the training is under constant development.
 
@@ -122,7 +122,7 @@ Cloning the repo will download all the training materials to your computer, incl
 
 * Using **Git Bash**, navigate to the `scripts` folder and execute `./exec.sh`. It will print logs in your terminal and create json files in the `dataset` folder. You should see something like the image below.
 
-![Exec](./images/exec.jpg)
+![Exec](./images/exec.JPG)
 
 * Open one or two json files, with any editor like Notepad, to see what kind of data was created. Basically, you show see some metadada and the transcription of the audio. Now you have text data about your audio files. This is the data that we will search for, using Azure Search. Please note that the audio file original name is contained in the json file name. This will help in the future for any application to do the match between audio and transcription files.
 
@@ -168,11 +168,11 @@ You should be able to see images and audio files in you result set. Using any to
 
 For a deep Azure Cognitive Search experience, use the [Knowledge Mining Bootcamp](https://github.com/Azure/LearnAI-KnowledgeMiningBootcamp). You will learn how to create a Bot to query **and open** your business documents, as you can see in the image below.
 
-![Bot](./images/bot.jpg)
+![Bot](./images/bot.JPG)
 
 If you use this lab as a complement to KMB, you'll end up having the architecture below.
 
-![New Architecture](./images/architecture.jpg)
+![New Architecture](./images/architecture.JPG)
 
 Stay tunned! The following limitatios will be addressed in a future lab:
 

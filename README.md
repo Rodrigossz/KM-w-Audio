@@ -102,7 +102,7 @@ Cloning the repo will download all the training materials to your computer, incl
 
 4. *Validation step*: Go to **C:\KM-w-Audio**, or any other folder you have created, and confirm it exists, including the dataset in the resources folder.
 
-![Git process](../resources/images/lab-environment-creation/git.JPG)
+![Git process](./images/git.JPG)
 
 >Note! The image above may have a different number r of files downloaded, the training is under constant development.
 
@@ -114,7 +114,7 @@ Cloning the repo will download all the training materials to your computer, incl
 
   * Subscription Key: this is the key of your Cognitive Service Speech to Text API. Use to image below to help you find, and copy, your key. You can use **Key 1**.
 
-  ![Key](./images/key.jpg)
+  ![Key](./images/key.JPG)
 
   * File name: The name of the `.wav` file in the dataset folder.
 

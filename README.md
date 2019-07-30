@@ -13,7 +13,7 @@ The need to mix audio data into a Knowledge Mining Solution comes from the momen
 * Audio from podcasts
 * CRM audio data
 
-But it is a challenge to do it since Azure Search, the Azure service for Knowledge Mining, only works with text and images.
+But in August/2019, it is a challenge. Azure Search, THE Microsoft Azure service for Knowledge Mining, doesn't extract content from audio files, it only ingests physical storage metadata: file name, location, size.
 
 With the content of this lab, you will be able to create a Knowledge Mining solution that, using Azure Search and Cognitive Services, allows your client or company to perform searches on top of MS-Word documents, MS-Excel spreadsheets, MS-PowerPoint presentations, images, pdfs, and now audio too.
 

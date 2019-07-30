@@ -50,7 +50,9 @@ There is no cost since you will be using the following services in an Azure Free
 
 ## Limitations
 
-Stay tuned! The following limitations will be addressed in a future lab:
+The following limitations are addressed with [Batch Transcription](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), what will be explained in a future lab. Stay tuned!
+
+Limitations: 
 
 1. MP3 files
 2. Files bigger than 15 MB

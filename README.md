@@ -50,7 +50,7 @@ There is no cost since you will be using the following services in an Azure Free
 
 ## Limitations
 
-The following limitations are addressed with [Batch Transcription](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), what will be explained in a future lab. Stay tuned!
+The following limitations are addressed with [Batch Transcription](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), what will be explained in a future lab.
 
 Limitations: 
 
@@ -58,7 +58,7 @@ Limitations:
 2. Files bigger than 15 MB
 3. Audio Files on Azure, to be opened from the Azure Search results
 
-When this occurs, it will be advertised in the following locations:
+Stay tuned! Batch transcription lab will be advertised in the following channels:
 
 * Azure AI Customer Engineering Blog - <http://aka.ms/ACE-Blog>
 * My LinkedIn feed - <https://www.linkedin.com/in/rodrigossz/>
